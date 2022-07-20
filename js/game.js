@@ -41,12 +41,15 @@ const createCard = (character) => {
 
 const loadGame = () => {
 
+  const duplicateCharacters = [...characters, ...characters];
 
-  characters.forEach((character) => {
+  const newArray = duplicateCharacters.sort(() => Math.random() - 0.5);
+
+  newArray.forEach((character) => {
     const card = createCard(character);
 
     grid.appendChild(card);
   });
 }
 
-loadGame()
+loadGame();
