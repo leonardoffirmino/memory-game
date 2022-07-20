@@ -29,9 +29,7 @@
 }
 
 .front {
-  background-image: url('../images/coco.png');
   transform: rotateY(180deg);
-
 }
 
 .back {
