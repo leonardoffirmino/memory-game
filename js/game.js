@@ -23,6 +23,15 @@ const createElement = (tag, className) => {
   return element;
 }
 
+
+const checkEndGame = () => {
+   const disableCards = document.querySelectorAll('.disable-card');
+
+   if(disableCards.length === 20){
+      alert('Parabéns, você conseguiu finalizar o jogo !!')
+   }
+}
+
 const checkCards = () => {
   const firstCharacter = firstCard.getAttribute('data-character');
   const secondCharacter = secondCard.getAttribute('data-character');
@@ -30,7 +39,14 @@ const checkCards = () => {
 
   if (firstCharacter === secondCharacter) {
 
+    firstCard.firstChild.classList.add('disable-card');
+    secondCard.firstChild.classList.add('disable-card');
 
+
+    firstCard = '';
+    secondCard = '';
+
+    checkEndGame();
 
   } else {
 
