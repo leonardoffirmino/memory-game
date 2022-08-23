@@ -1,3 +1,7 @@
+body {
+  background-color: #CCCC;
+}
+
 .login-form {
   display: flex;
   align-items: center;
