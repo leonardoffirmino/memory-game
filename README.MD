@@ -4,7 +4,7 @@
 </div>
 
 <div align="center">
-  <img src="" alt="Logo Crash">
+  <img src="./github/main.png" alt="Logo Crash">
 </div>
 
 ## Sobre
@@ -32,5 +32,5 @@
 <hr/>
 <br/>
 <div align="center">
-  <img src="" alt="Memory Game Crash">
+  <img src="./github/main.png" alt="Memory Game Crash">
 </div>
